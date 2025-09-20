@@ -25,4 +25,21 @@ Welcome to Sturdy Octo Disco, a fun and creative project designed to overlay sun
 - Adding flair to your photos for fun.
 - Practicing computer vision workflows.
 
+## Program and Output:
+```
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+
+#Load face image
+faceImage = cv2.imread('LOGU PASSPORT IMAGE.png')
+plt.imshow(faceImage[:,:,::-1]); plt.title("Face")
+print("Face shape:", faceImage.shape)
+```
+
+
+
+
+
+
 Feel free to fork, contribute, or customize this project for your creative needs!
