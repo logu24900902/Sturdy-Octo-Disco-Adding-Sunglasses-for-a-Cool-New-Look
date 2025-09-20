@@ -36,13 +36,17 @@ faceImage = cv2.imread('LOGU PASSPORT IMAGE.png')
 plt.imshow(faceImage[:,:,::-1]); plt.title("Face")
 print("Face shape:", faceImage.shape)
 ```
+
 <img width="483" height="583" alt="Screenshot 2025-09-20 142823" src="https://github.com/user-attachments/assets/c8253245-0572-42ac-a0fb-69d601fa6202" />
+
 ```
 glassJPG = cv2.imread('SUNGLASS.png')
 plt.imshow(glassJPG[:,:,::-1]); plt.title("glassJPG")
 print("Glass shape:", glassJPG.shape)
 ```
+
 <img width="721" height="391" alt="image" src="https://github.com/user-attachments/assets/7878bf25-f370-44cb-b70b-57cc8323e14f" />
+
 ```
 glassBGR = glassJPG[:,:,0:3]
 glassGray = cv2.cvtColor(glassBGR, cv2.COLOR_BGR2GRAY)
@@ -54,14 +58,18 @@ plt.subplot(121)
 plt.imshow(glassBGR[:,:,::-1])  # BGR → RGB
 plt.title('Sunglass Color channels')
 ```
+
 <img width="784" height="415" alt="image" src="https://github.com/user-attachments/assets/e285d663-1573-44e8-8f26-b45f8997f5d0" />
+
 ```
 #Show generated mask
 plt.subplot(122)
 plt.imshow(glassMask1, cmap='gray')
 plt.title('Sunglass Mask (generated)')
 ```
+
 <img width="421" height="253" alt="image" src="https://github.com/user-attachments/assets/c80a6279-c880-4bfe-aec1-b1c7b7b2883e" />
+
 ```
 import cv2
 import numpy as np
@@ -107,6 +115,7 @@ else:
     plt.axis("off")
     plt.show()
 ```
+
 <img width="580" height="745" alt="image" src="https://github.com/user-attachments/assets/740fe967-5678-4422-a595-fef46ab13e38" />
 
 
